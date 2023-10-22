@@ -10,6 +10,7 @@ exports.createProduct = async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
+  
 };
 exports.fetchAllProducts = async (req, res) => {
 
