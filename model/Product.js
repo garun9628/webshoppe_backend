@@ -28,6 +28,7 @@ const productSchema = new Schema({
   deleted: { type: Boolean, default: false },
 });
 
+// creating virtual id, eg: we can use id in our project instead of _id
 const virtual = productSchema.virtual("id");
 virtual.get(function() {
   return this._id;
